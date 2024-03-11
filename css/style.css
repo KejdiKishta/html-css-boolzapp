@@ -27,12 +27,14 @@ body{
       #DCDBD2 15%,
       #DCDBD2 100%
     );
+    font-size: .6rem;
 }
 
 /* ?COMMON */
 
 :root {
     --fifty-height: 50px;
+    --sixty-height: 60px;
     --header-color: #EAEAEA;
     --ten-padding: 10px
 }
@@ -50,6 +52,14 @@ body{
     height: 90vh;
     margin: 5vh auto;
     background-color: white;
+}
+
+.t-align-right {
+    text-align: right;
+}
+
+.opacity05 {
+    opacity: 0.5;
 }
 
 /* !CONTACTS COL */
@@ -77,7 +87,7 @@ nav header {
     border: 1px solid black;
 }
 
-.header-icons {
+.nav-header-icons {
     
     /* debug */
     width: 30%;
@@ -88,7 +98,7 @@ nav header {
 
 .notification {
     background-color: #8EDAFC;
-    height: 60px;
+    height: var(--sixty-height);
     padding: var(--ten-padding)
 }
 
@@ -129,6 +139,7 @@ section.research {
 /* *RECENT CHATS */
 
 .chats-history {
+    height: calc(100% - (var(--fifty-height) * 2 + var(--sixty-height)));
     overflow-y: scroll;
 }
 
@@ -159,4 +170,87 @@ main{
 
     /* debug */
     background-color: red;
+}
+
+/* *CONTACT-DETAILS */
+
+main header {
+    height: var(--fifty-height);
+    background-color: var(--header-color);
+    padding: var(--ten-padding);
+}
+
+.main-chat-name {
+    flex-grow: 1;
+
+    /* debug */
+    border: 1px solid black;
+}
+
+.main-header-icons {
+
+    /* debug */
+    width: 30%;
+    border: 1px solid black;
+}
+
+/* *LAST MESSAGES */
+
+.messages {
+    flex-direction: column;
+    background-image: url(../img/mine.jpg);
+    background-size: 50%;
+    height: calc(100% - (var(--fifty-height) * 2));
+    padding: 30px 40px;
+    overflow-y: scroll;
+}
+
+.sent {
+    width: 70%;
+    margin: 10px;
+    padding: var(--ten-padding);
+    align-self: flex-end;
+    background-color: #D5F9BA;
+    border-radius: 10px;
+}
+
+.messages p {
+    padding-right: .6rem;
+}
+
+.received {
+    width: 70%;
+    margin: 10px;
+    padding: var(--ten-padding);
+    background-color: #FFFFFF;
+    border-radius: 10px;
+}
+
+.message-time {
+    text-align: right;
+    font-size: .4rem;
+}
+
+/* *INPUT SECTION */
+
+.input-message {
+    height: var(--fifty-height);
+    background-color: #F3EEEA;
+    align-items: center;
+}
+
+.emoji, .vocal-note {
+    width: 10%;
+
+    /* debug */
+    height: 1rem;
+    border: 1px solid black;
+}
+
+.input-message input {
+    flex-grow: 1;
+    font-size: .6rem;
+    padding: 5px 2px;
+    border-radius: 5px;
+    border: none;
 }
