@@ -10,7 +10,11 @@
     }
 
     nav {
-        width: 10%;
+        width: 50px;
+    }
+
+    main {
+        width: calc(100% - 50px);
     }
 
     .chats-history {
@@ -33,11 +37,16 @@
     nav,
     .nav-header-icons,
     .emoji,
-    .vocal-note {
+    .vocal-note,
+    .main-header-icons {
         display: none;
     }
 
     .messages {
         padding: 10px;
+    }
+
+    main {
+        width: 100%;
     }
 }
