@@ -23,7 +23,6 @@ button {
     background-color: transparent;
     color: inherit;
     cursor: pointer;
-    font-size: 0.5rem;
 }
 
 /* ?BODY SETTINGS */
@@ -264,6 +263,10 @@ main header div:first-child {
 .chev-list li {
     padding: 5px;
     text-align: center;
+}
+
+.chev-list button {
+    font-size: .5rem;
 }
 
 label {
