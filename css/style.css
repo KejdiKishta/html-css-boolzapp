@@ -237,7 +237,7 @@ main header div:first-child {
 }
 
 .sent {
-    width: 60%;
+    max-width: 60%;
     margin: 10px;
     padding: var(--ten-padding);
     align-self: flex-end;
@@ -278,7 +278,7 @@ label {
 }
 
 .received {
-    width: 60%;
+    max-width: 60%;
     margin: 10px;
     padding: var(--ten-padding);
     background-color: #FFFFFF;
